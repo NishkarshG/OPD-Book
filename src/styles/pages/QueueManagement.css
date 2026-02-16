@@ -1,0 +1,113 @@
+.queue-layout {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .queue-layout {
+        grid-template-columns: 280px 1fr;
+    }
+}
+
+.stats-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.stats-title {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.stats-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+.stats-count.success {
+    color: var(--success);
+}
+
+.current-patient-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--primary);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.token-large {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin: var(--spacing-md) 0;
+    letter-spacing: -2px;
+}
+
+.patient-name-large {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.next-patient-section {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-muted);
+    background-color: var(--bg-color);
+}
+
+.upcoming-list {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.queue-item {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition-fast);
+}
+
+.queue-item:hover {
+    background-color: var(--bg-color);
+}
+
+.queue-item:last-child {
+    border-bottom: none;
+}
+
+.queue-item-token {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.queue-item-name {
+    color: var(--text-muted);
+}

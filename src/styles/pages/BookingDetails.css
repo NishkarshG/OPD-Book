@@ -1,0 +1,26 @@
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.form-row {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 640px) {
+    .form-row.two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
